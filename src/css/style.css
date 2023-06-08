@@ -294,18 +294,18 @@ body {
 }
 
 .meal-content {
-    padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+    padding: 3rem 4rem 3.6rem 4rem;
 }
 
 .meal-tags {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
     display: flex;
-    gap: .6rem;
+    gap: 2rem;
 }
 
 .tag {
     display: inline-block;
-    padding: .8rem 1.2rem;
+    padding: .6rem 1.2rem;
     font-size: 1.4rem;
     letter-spacing: .3rem;
     background-color: #51cf66;
@@ -330,7 +330,7 @@ background-color: #94d82d;
     font-size: 2.4rem;
     color: #333;
     font-weight: 600;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.5rem;
     letter-spacing: .3rem;
 }
 

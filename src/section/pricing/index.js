@@ -1,9 +1,9 @@
 import { IoMdCheckmark } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import { IoMdInfinite } from "react-icons/io";
+import { AiFillLike } from "react-icons/ai";
 import { IoNutritionSharp } from "react-icons/io5";
 import { IoLeafSharp } from "react-icons/io5";
-import { IoIosPause } from "react-icons/io";
+import { IoPauseCircleSharp } from "react-icons/io5";
 
 const Pricing = () => {
     return <section className="section-pricing" id="pricing">
@@ -68,7 +68,7 @@ const Pricing = () => {
         <div className="container grid grid--4-cols">
             <div className="feature">
                 <div className="feature-icon-box">
-                    <IoMdInfinite color="#e67e22" size={50} />
+                    <AiFillLike color="#e67e22" size={50} />
                 </div>
                 <p className="feature-title">不用在自己做飯了</p>
                 <p className="feature-text">我們的訂閱服務涵蓋全年365天，包括主要的假日。</p>
@@ -89,7 +89,7 @@ const Pricing = () => {
             </div>
             <div className="feature">
                 <div className="feature-icon-box">
-                    <IoIosPause color="#e67e22" size={43} />
+                    <IoPauseCircleSharp color="#e67e22" size={43} />
                 </div>
                 <p className="feature-title">隨時暫停</p>
                 <p className="feature-text">有安排要去度假嗎？只需暫停您的訂閱，我們會退還未使用的天數。</p>

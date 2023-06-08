@@ -12,15 +12,15 @@ return  <section className="section-cta" id="cta">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <form className="cta-form" action="#">
                 <div>
-                    <label for="full-name">全名</label>
+                    <label htmlFor="full-name">全名</label>
                     <input id="full-name" type="text" placeholder="Your name" required></input>
                 </div>
                 <div>
-                    <label for="full-email">email</label>
+                    <label htmlFor="full-email">email</label>
                     <input id="full-email" type="email" placeholder="me@example.com" required></input>
                 </div>
                 <div>
-                    <label for="select-where">從哪裡知道我們的?</label>
+                    <label htmlFor="select-where">從哪裡知道我們的?</label>
                     <select id="select-where" required>
                         <option value="">請選擇</option>
                         <option value="friends">朋友</option>
