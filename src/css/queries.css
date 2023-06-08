@@ -164,71 +164,79 @@
     .main-nav-link:visited {
         font-size: 2.6rem;
     }
-
-    /* *************************** */
-    /* 704px */
-    /* *************************** */
-    @media (max-width:44em) {
-
-        .grid--3-cols,
-        .grid--4-cols {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .diets {
-            grid-column: 1/-1;
-            justify-self: center;
-        }
-
-        .heading-secondary {
-            margin-bottom: 4.8rem;
-        }
-
-        .pricing-plan {
-            width: 100%;
-        }
-
-        .grid-footer {
-            grid-template-columns: repeat(6, 1fr);
-        }
-
-        .logo-col,
-        .address-col {
-            grid-column: span 3;
-        }
-
-        .nav-col {
-            grid-row: 1;
-            grid-column: span 2;
-            margin-bottom: 4.8rem;
-        }
-
-        .copyright {
-            margin-top: auto;
-        }
-
-        .social-icon {
-            width: 4rem;
-            height: 4rem;
-        }
+    .footer{
+        padding-left: 2rem;
     }
 }
+
+/* *************************** */
+/* 704px */
+/* *************************** */
+@media (max-width:44em) {
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+
+    .footer {
+        padding-left: 8rem;
+    }
+
+    .grid-footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 4.8rem;
+    }
+
+
+    .social-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
 
 /* ******************* */
 /* 544px(phone) */
 /* ******************* */
 @media(max-width:34em) {
-    .section-how{
+    .section-how {
         padding: 3.2rem 0 3.2rem;
     }
-    .pricing-plan{
+
+    .pricing-plan {
         width: 80%;
         justify-self: center;
     }
-    .pricing-plan--starter{
+
+    .pricing-plan--starter {
         justify-self: center;
         border: 5px solid #fdf2e9;
     }
+
     .grid {
         row-gap: 4.8rem;
     }
@@ -266,27 +274,38 @@
     .step-img-box {
         transform: translateY(2.4rem);
     }
-    .testimonials{
+
+    .testimonials {
         grid-template-columns: 1fr;
     }
-    .gallery{
-        grid-template-columns: repeat(4,1fr);
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.2rem;
     }
-    .testimonials-container{
+
+    .testimonials-container {
         padding: 9.6rem 3.2rem 6.4rem;
     }
-    .cta{
+
+    .cta {
         grid-template-columns: 1fr;
     }
-    .cta-img-box{
+
+    .cta-img-box {
         height: 28rem;
         grid-row: 1;
     }
-    .cta-text-box{
+
+    .cta-text-box {
         padding: 3.2rem;
     }
+
     .grid:not(:last-child) {
         margin-bottom: 4rem;
+    }
+
+    .footer {
+        padding-left: 1rem;
     }
 }

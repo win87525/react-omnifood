@@ -68,7 +68,7 @@ const Pricing = () => {
         <div className="container grid grid--4-cols">
             <div className="feature">
                 <div className="feature-icon-box">
-                    <AiFillLike color="#e67e22" size={50} />
+                    <AiFillLike color="#e67e22" size={42} />
                 </div>
                 <p className="feature-title">不用在自己做飯了</p>
                 <p className="feature-text">我們的訂閱服務涵蓋全年365天，包括主要的假日。</p>
