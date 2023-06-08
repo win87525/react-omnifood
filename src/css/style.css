@@ -1,0 +1,695 @@
+/* 
+- 文字大小(px)
+    10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+
+- 行高
+    預設:1
+
+- 顏色 
+    主色：#e67e22 
+    淺橘色:#fdf2e9  
+    灰色:#555 #333 #6f6f6f
+
+- 陰影
+
+*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .2rem;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans TC', sans-serif !important;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+
+}
+
+
+
+/*******************/
+/* 頁首 */
+/*******************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.logo {
+    height: 2.2rem;
+}
+
+/*******************/
+/* navgation */
+/*******************/
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all .3s;
+    letter-spacing: .3rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #cf711f;
+}
+
+/* *********************** */
+/* 頁首選單按鈕mobile */
+/* *********************** */
+
+.btn-mobile-nav {
+    border: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+    display: none;
+}
+
+/*******************/
+/* 部分1-hero */
+/*******************/
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+
+
+
+.hero-img {
+    width: 100%;
+}
+
+
+
+.delivered-meals {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.delivered-imgs {
+    display: flex;
+}
+
+.delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+    border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+    margin: 0;
+}
+
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.delivered-text span {
+    color: #e67e22;
+    font-weight: 800;
+}
+
+/*******************/
+/* 部分2-featured */
+/*******************/
+.section-featured {
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #999;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+
+/*******************/
+/* 部分3-how */
+/*******************/
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.step-number {
+    font-size: 9.8rem;
+    font-weight: 600;
+    color: #919191;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+.step-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.step-img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+    width: 60%;
+    /* 用padding的方式讓他可以被加到width一樣 */
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
+}
+
+/*******************/
+/* 部分4-meals */
+/*******************/
+.section-meals {
+    padding: 4.8rem 0 9.6rem;
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+
+.meal-content {
+    padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+}
+
+.meal-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: .6rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: .8rem 1.2rem;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    background-color: #51cf66;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tag--vegetarian {
+    background-color: #51cf66;
+}
+
+/* .tag--vagan{
+background-color: #94d82d;
+} */
+.tag--paleo {
+    background-color: #94d82d;
+}
+
+.meal-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+    letter-spacing: .3rem;
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.meal-attribute {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+}
+
+.meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #e67e22;
+}
+
+.meal-img {
+    width: 100%;
+}
+
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+/* **************** */
+/* section-testimonials */
+/* **************** */
+
+.section-testimonials {
+    background-color: #fae5d3;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.testimonials-container {
+    padding: 9.6rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all .5s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/* **************** */
+/* section-pricing*/
+/* **************** */
+.section-pricing {
+    padding: 9.6rem 0 4.8rem;
+}
+
+.pricing-plan {
+    /* background-color: #fdf2e9; */
+    border-radius: 11px;
+    padding: 4.6rem;
+    width: 75%;
+}
+
+.pricing-plan--complete {
+    padding: 4.8rem;
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "最佳方案";
+    position: absolute;
+    top: 5%;
+    right: -9%;
+
+    background-color: #ffd43b;
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 700;
+    padding: .8rem 4.6rem;
+    transform: rotate(45deg);
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 3px solid #fdf2e9;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name {
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: .3rem;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-right: .8rem;
+}
+
+.plan-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .3rem;
+    color: #6f6f6f;
+}
+
+.plan-sing-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.plan-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.feature-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-bottom: 3.2rem;
+    /* border: 2px solid #e67e22; */
+    background-color: #fae5d3;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    line-height: 1.8;
+    font-style: 1.8rem;
+}
+
+/* **************** */
+/* CTA */
+/* **************** */
+.section-cta {
+    padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    /* height: 50rem; */
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.cta .heading-secondary {
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 150, 76, 0.3), rgba(230, 125, 33, 0.3)), url('../section/img/eating.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 1.6rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    /* outline: 4px dotted #e67e22;
+    outline-offset: 2px; */
+    box-shadow: 0 0 0 0.8rem hsla(27, 83%, 95%, 0.5);
+}
+
+/* **************** */
+/* Footer */
+/* **************** */
+.footer {
+    padding: 12.8rem 0;
+    /* border-top: 1px solid #eee; */
+    background-color: #fdf2e9;
+}
+
+.grid-footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #555;
+}
+
+.copyright {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: 2rem;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #767676;
+    transition: all .3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
